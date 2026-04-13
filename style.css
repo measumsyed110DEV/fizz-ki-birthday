@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    overflow: hidden;
+}
+
+.page {
+    display: none;
+    margin-top: 150px;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #ff4d6d;
+    cursor: pointer;
+}
+
+/* rain animation */
+.fall {
+    position: absolute;
+    top: -50px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
